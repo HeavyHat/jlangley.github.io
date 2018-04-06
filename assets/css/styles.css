@@ -4,6 +4,13 @@ body
     font-weight: 400;
 }
 
+
+
+.wrapper{
+    overflow:hidden;
+    width: 150%; /* it is only important to be bigger then parent for one image width size */
+}
+
 h1,
 h2,
 h3,
@@ -69,14 +76,41 @@ a:focus {
 {
    -webkit-border-top-left-radius: 4px;
    -webkit-border-top-right-radius: 4px;
-   border-top-left-radius: 4px;
-   border-top-right-radius: 4px;
-   margin: -40px -40px -40px 0px;
+   margin: -40px -40px 20px -40px;
    width: calc(100% + 82px);
    width: -moz-calc(100% + 82px);
    width: -webkit-calc(100% + 82px);
    width: -o-calc(100% + 82px);
    overflow:hidden;
+   height: 385px;
+}
+
+.carousel-inner
+{
+  overflow:hidden;
+}
+
+#accordion
+{
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.card-in > canvas
+{
+  margin-left: -40px;
+  margin-right -40px;
+  width: calc(100% + 82px);
+  width: -moz-calc(100% + 82px);
+  width: -webkit-calc(100% + 82px);
+  width: -o-calc(100% + 82px);
+  overflow:hidden;
+}
+
+.carousel-inner > .item > img
+{
+  width:100%;
+  object-fit: cover;
 }
 
 html {
@@ -173,7 +207,7 @@ p {
 
 .spacer
 {
-  height: 550px;
+  height: 650px;
 }
 
 .card-in
@@ -211,7 +245,7 @@ p {
   height: 56px;
   position: absolute;
   left: 50%;
-  top: 280px;
+  top: 330px;
   z-index: 2;
   overflow: hidden;
   opacity: 0;
@@ -227,7 +261,7 @@ p {
 }
 
 .profile-card header {
-  width: 200px;
+  width: 300px;
   height: 300px;
   padding: 40px 20px 30px 20px;
   display: inline-block;
@@ -290,8 +324,7 @@ p {
 }
 
 .profile-card .profile-bio {
-  width: 175px;
-  height: 180px;
+  width: 100%;
   display: inline-block;
   float: right;
   padding: 50px 20px 30px 20px;
@@ -308,8 +341,8 @@ p {
   width: 218px;
   display: inline-block;
   float: right;
-  margin: 0px;
-  padding: 15px 20px;
+  margin: auto;
+  padding: auto;
   background: #FFFFFF;
   margin-top: 50px;
   text-align: center;
@@ -421,58 +454,6 @@ p {
   }
 }
 
-@-webkit-keyframes moveDown {
-  0% {
-    top: 40px;
-  }
-  50% {
-    top: 160px;
-  }
-  100% {
-    top: 200px;
-  }
-}
-
-@keyframes moveDown {
-  0% {
-    top: 40px;
-  }
-  50% {
-    top: 160px;
-  }
-  100% {
-    top: 200px;
-  }
-}
-
-@-webkit-keyframes moveUp {
-  0% {
-    background: #FFB300;
-    top: 200px;
-  }
-  50% {
-    top: 30px;
-  }
-  100% {
-    top: 40px;
-    background: #E0E0E0;
-  }
-}
-
-@keyframes moveUp {
-  0% {
-    background: #FFB300;
-    top: 200px;
-  }
-  50% {
-    top: 30px;
-  }
-  100% {
-    top: 40px;
-    background: #E0E0E0;
-  }
-}
-
 @-webkit-keyframes materia {
   0% {
     background: #E0E0E0;
@@ -481,8 +462,8 @@ p {
     -webkit-border-radius: 4px;
   }
   100% {
-    width: 440px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     background: #FFFFFF;
     -webkit-border-radius: 4px;
   }
@@ -496,8 +477,8 @@ p {
     border-radius: 4px;
   }
   100% {
-    width: 440px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     background: #FFFFFF;
     border-radius: 4px;
   }
@@ -602,6 +583,40 @@ p {
   }
 }
 
+
+@import "compass/css3";
+
+$main-color: #00B285;
+
+body{
+  background: #222;
+  color: #FFF;
+}
+
+.skewed-bg{
+  background: $main-color;
+  padding: 200px 0;
+  @include transform(skew(0deg, -10deg));
+  margin-top: -200px;
+
+  .content{
+    @include transform(skew(0deg, 10deg));
+    text-align: center;
+
+    .title{
+      padding-top: 100px;
+      font-weight: normal;
+    }
+
+    .text{
+      width:60%;
+      margin: 25px auto;
+      color: lighten($main-color, 55);
+    }
+
+  }
+}
+
 @media screen and (min-height: 480px) {
   .profile-card header {
     width: auto;
@@ -632,7 +647,7 @@ p {
     }
     100% {
       width: 300px;
-      height: 440px;
+      height: 540px;
       background: #FFFFFF;
       -webkit-border-radius: 4px;
     }
@@ -646,7 +661,7 @@ p {
     }
     100% {
       width: 300px;
-      height: 440px;
+      height: 540px;
       background: #FFFFFF;
       border-radius: 4px;
     }
