@@ -8,9 +8,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Joshua Langley - Portfolio">
+    <meta name="description" content="Joshua Langley - Software Developer Portfolio">
     <meta name="author" content="Joshua Langley">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
@@ -20,7 +20,11 @@
 
 
     <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"/>
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/normalize.css">
@@ -90,10 +94,10 @@
 
 <div class="container">
   <div class="container-fluid">
-    <div class="col-md-12 spacer">
+    <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12 spacer">
     </div>
-      <div class="col-md-8">
-        <div class="card-in col-md-12">
+      <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+        <div class="card-in  col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h1 class="title">
             About me
           </h1>
@@ -144,70 +148,11 @@
             Presentations
           </h1>
           <p class="hidden-xs">
-            Since my first year of University
+            Whilst at University, I developed a love for talking. As a result, I always put myself in situations where I could talk to as many people as possible and break down as many communication barriers as a could. I ended up doing talks for hackathons, running lectures, introducing the uni to prospective students, and even running a society for 700 students. I always thought it was one place where the field could get much better, by making sure developers are not afraid to speak their mind and do so with confidence and humility.
           </p>
 
         </div>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <div class="card-in col-md-12 col-sm-12 col-xs-12">
-          <h1 class="title">
-            Skills
-          </h1>
-          <div class="content">
-              <div class="skillset">
-
-                  <div class="item"  data-toggle="tooltip" data-placement="left" data-animation="true" title="Developed Data Science Tools and Web Backends.">
-                      <h3 class="level-title">Python &amp; Flask - <span class="level-label"> 5 Years </span></h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="90%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">C# .NET 4.6 - <span class="level-label"> 3 Years </span></h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="85%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">Java - <span class="level-label"> 7 Years </span></h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="80%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">HTML5, CSS &amp; jQuery - <span class="level-label">3 Years</span></h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="65%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">C &amp; C++ - <span class="level-label">2 Years</span></h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="45%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">Verilog - <span class="level-label"> 1 Year </span></h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="35%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-              </div>
-          </div><!--//content-->
-        </div>
-        <div class="card-in col-md-12 col-sm-12 col-xs-12">
+        <div class="card-in col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h1>
             Experience
           </h1>
@@ -221,28 +166,106 @@
                </h4>
              </div>
              <div id="BB" class="panel-collapse collapse in">
-               <div class="panel-body"> Starting a Graduate Scheme in August 2018.</div>
+               <div class="panel-body"> Starting a Graduate Scheme in August 2018, Stay tuned for updates!</div>
              </div>
            </div>
            <div class="panel panel-default">
              <div class="panel-heading">
                <h4 class="panel-title">
-                 <a data-toggle="collapse" data-parent="#accordion" href="#cscon">
+                 <a data-toggle="collapse" data-parent="#accordion" href="#cs-contractor">
                  Credit Suisse</a>
                </h4>
              </div>
-             <div id="cscon" class="panel-collapse collapse">
-               <div class="panel-body">Developed C# Valuation Distribution Engine as a Contractor for Credit Risk Derivatives and Structured Products in a 3 month window.</div>
+             <div id="cs-contractor" class="panel-collapse collapse">
+               <div class="panel-body">Contract extension to aid in the development of a Risk Engine Rewrite under a Service Based Architecture. Developed C# Valuation Distribution Engine as a Contractor for Credit Risk Derivatives and Structured Products in a 3 month window.</div>
+             </div>
+           </div>
+           <div class="panel panel-default">
+             <div class="panel-heading">
+               <h4 class="panel-title">
+                 <a data-toggle="collapse" data-parent="#accordion" href="#cs-placement">
+                 Credit Suisse</a>
+               </h4>
+             </div>
+             <div id="cs-placement" class="panel-collapse collapse">
+               <div class="panel-body">12 Month Placement as part of my University Programme. Postitioned as a Software Developer in Credit Risk for Credit Derivatives and Structured Produced working on an EoD Risk Valuation Engine in C# with a variety of scripts, SQL and Splunk backend. My work would vary from 3rd line support, daily incremental changes, tooling to Pull Request Reviews to deploy to Testing, QA and Production environments. The Engine itself was capable of valuing over 200 types of financial instruments with fine grained customisability into how they were valued, pulling hundred of Market and Static data services and building markets uniquely for each.
+               </div>
              </div>
            </div>
           </div>
         </div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="card-in col-md-12 col-sm-12 col-xs-12">
+          <h1 class="title">
+            Skills
+          </h1>
+          <p>
+            Hover over for a little info!
+          </p>
+          <div class="content">
+              <div class="skillset">
+
+                  <div class="item"  data-toggle="tooltip" data-placement="bottom" data-animation="true" title="Developed Data Science Tools and Web Backends.">
+                      <h3 class="level-title">Python &amp; Flask - <span class="level-label"> 5 Years </span></h3>
+                      <div class="level-bar">
+                          <div class="level-bar-inner" data-level="90%">
+                          </div>
+                      </div><!--//level-bar-->
+                  </div><!--//item-->
+
+                  <div class="item"   data-toggle="tooltip" data-placement="bottom" data-animation="true" title="Produced production quality million+ LOC applications.">
+                      <h3 class="level-title">C# .NET 4.6 - <span class="level-label"> 3 Years </span></h3>
+                      <div class="level-bar">
+                          <div class="level-bar-inner" data-level="85%">
+                          </div>
+                      </div><!--//level-bar-->
+                  </div><!--//item-->
+
+                  <div class="item"   data-toggle="tooltip" data-placement="bottom" data-animation="true" title="Developed smaller tooling and personal projects.">
+                      <h3 class="level-title">Java - <span class="level-label"> 7 Years </span></h3>
+                      <div class="level-bar">
+                          <div class="level-bar-inner" data-level="80%">
+                          </div>
+                      </div><!--//level-bar-->
+                  </div><!--//item-->
+
+                  <div class="item"   data-toggle="tooltip" data-placement="bottom" data-animation="true" title="Made this! As well as loads of other websites.">
+                      <h3 class="level-title">HTML5, CSS &amp; jQuery - <span class="level-label">3 Years</span></h3>
+                      <div class="level-bar">
+                          <div class="level-bar-inner" data-level="65%">
+                          </div>
+                      </div><!--//level-bar-->
+                  </div><!--//item-->
+
+                  <div class="item"   data-toggle="tooltip" data-placement="bottom" data-animation="true" title="OpenGL based applciations and algorithm tests.">
+                      <h3 class="level-title">C &amp; C++ - <span class="level-label">2 Years</span></h3>
+                      <div class="level-bar">
+                          <div class="level-bar-inner" data-level="45%">
+                          </div>
+                      </div><!--//level-bar-->
+                  </div><!--//item-->
+
+                  <div class="item"   data-toggle="tooltip" data-placement="bottom" data-animation="true" title="Made a 8-bit RISC processor.">
+                      <h3 class="level-title">Verilog - <span class="level-label"> 1 Year </span></h3>
+                      <div class="level-bar">
+                          <div class="level-bar-inner" data-level="35%">
+                          </div>
+                      </div><!--//level-bar-->
+                  </div><!--//item-->
+              </div>
+          </div><!--//content-->
+        </div>
+
         <div class="card-in col-md-12 col-sm-12 col-xs-12">
           <h1>
             Github
           </h1>
 
-          <div class="col-md-12" id="github-graph">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="github-feed">
+            <h4>
+              Just loading it in for you!
+            </h4>
           </div>
         </div>
       </div>
@@ -253,7 +276,23 @@
 
 <!-- ******FOOTER****** -->
 <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <h3>
+          Made by
+        </br>
+          Joshua Langley
+        </h3>
+        <img class="signature" src="assets/images/signature.svg"></img>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      </div>
 
+    </div>
+  </div>
 </footer><!--//footer-->
 
 
@@ -267,6 +306,9 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>

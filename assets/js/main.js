@@ -54,8 +54,11 @@ jQuery(document).ready(function($) {
         }
     );
 
-    /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    GitHubCalendar("#github-graph", "Heavyhat");
+    GitHubActivity.feed({
+    	username: "Heavyhat",
+    	selector: "#github-feed",
+    	limit: 10 // optional
+    });
 
     var colors = new Array(
     [97,70,255],
