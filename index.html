@@ -29,16 +29,22 @@
 	<link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
 
 	<!-- Theme CSS -->
-	<link id="theme-style" rel="stylesheet" href="assets/css/normalize.css">
+	<link id="theme-style" rel="stylesheet" href="assets/css/normalize.min.css">
 	<link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107523915-3"></script>
 	<script>
+	  var id = getCookie("id");
+		if(id == "")
+		{
+			id = guid()
+			setCookie("id", id, 180)
+		}
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-
 		gtag('config', 'UA-107523915-3');
+		gtag('set', {'user_id': id});
 	</script>
 
 
