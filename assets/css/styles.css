@@ -26,8 +26,8 @@ body:before {
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
-  animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+  -webkit-animation: puff 0.25s 0.9s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.1s 1.15s linear forwards;
+  animation: puff 0.25s 0.9s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.1s 1.15s linear forwards;
 }
 
 body
