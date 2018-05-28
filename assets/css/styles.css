@@ -110,18 +110,7 @@ a:focus {
 }
 
 
-.card-in > .carousel:first-child
-{
-   -webkit-border-top-left-radius: 4px;
-   -webkit-border-top-right-radius: 4px;
-   margin: -40px -40px 20px -40px;
-   width: calc(100% + 82px);
-   width: -moz-calc(100% + 82px);
-   width: -webkit-calc(100% + 82px);
-   width: -o-calc(100% + 82px);
-   overflow:hidden;
-   height: 40%;
-}
+
 
 .carousel-inner
 {
@@ -254,7 +243,6 @@ p {
   padding: 40px 40px 40px 40px;
   display: inline-block;
   z-index: 2;
-  border-right: 2px dashed #EEEEEE;
   background: #FFFFFF;
   margin-bottom: 30px;
   color: #000000;
